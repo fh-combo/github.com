@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* 父元素-横向排列（主轴） */
+/* 父元素-横向换行 */
+/* 父元素-水平居中（主轴是横向才生效） */
+/* 子元素-显示在从左向右（从上向下）第1个位置，用于改变源文档顺序显示 */
+/* 子元素-显示在从左向右（从上向下）第2个位置，用于改变源文档顺序显示 */
+.case-main {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  -o-box-pack: start;
+  box-pack: start; }
+
+.case-banner {
+  width: auto;
+  height: 318px; }
+
+.case-content {
+  width: 508px;
+  height: 318px;
+  margin-left: 20px;
+  background-color: #fafafa;
+  padding: 20px; }
+  .case-content > ul {
+    color: #666; }
+    .case-content > ul:first-child {
+      padding-bottom: 24px; }
+      .case-content > ul:first-child > li:first-child {
+        font-size: 18px;
+        padding-bottom: 20px; }
+      .case-content > ul:first-child li {
+        font-size: 14px; }
+        .case-content > ul:first-child li:not(.case-li-tip) {
+          padding-bottom: 12px; }
+    .case-content > ul h5 {
+      font-size: 14px;
+      padding-bottom: 12px; }
+    .case-content > ul p {
+      font-size: 12px;
+      line-height: 160%; }
+    .case-content > ul .case-icon1, .case-content > ul .case-icon2, .case-content > ul .case-icon3, .case-content > ul .case-icon4 {
+      background: url("../imgs/nth-01-sprite.png") no-repeat;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 8px; }
+    .case-content > ul .case-icon1 {
+      background-position: -278px -410px; }
+    .case-content > ul .case-icon2 {
+      background-position: -278px -453px; }
+    .case-content > ul .case-icon3 {
+      background-position: -278px  -473px; }
+    .case-content > ul .case-icon4 {
+      background-position: -278px -431px; }
+
+.case-content {
+  border: #efefef 1px solid; }
+
+.top-box {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 50px; }
+
+.top-designer {
+  font-size: 12px;
+  overflow: hidden;
+  padding-bottom: 40px; }
+  .top-designer .td-left {
+    float: left;
+    width: 90px;
+    height: 90px;
+    position: relative; }
+    .top-designer .td-left img {
+      width: 100%;
+      height: 100%; }
+    .top-designer .td-left .top-name {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 2px 0;
+      bottom: 0;
+      background-color: #ffab00;
+      color: #fff; }
+  .top-designer .td-right {
+    float: left;
+    width: 627px;
+    margin-left: 30px; }
+    .top-designer .td-right h4 {
+      color: #ababab;
+      font-size: 14px;
+      padding-bottom: 20px; }
+    .top-designer .td-right .double-point {
+      background: url("../imgs/nth-01-sprite.png") no-repeat -277px -360px;
+      width: 12px;
+      height: 12px;
+      display: inline-block; }
+    .top-designer .td-right p {
+      line-height: 160%;
+      padding-bottom: 12px; }
+  .top-designer .td-btn {
+    float: right; }
+    .top-designer .td-btn a {
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #fa4015;
+      font-size: 12px;
+      color: #fff;
+      margin-right: 20px; }
+
+.proto-tab {
+  font-size: 16px;
+  font-weight: normal; }
+  .proto-tab:after {
+    content: "";
+    display: inline-block;
+    top: 4px;
+    right: 0;
+    left: 8px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #666;
+    position: relative; }
+
+.item-gd {
+  font-size: 12px;
+  padding: 34px 0 40px 0; }
+  .item-gd .gd-lx-tab {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../imgs/nth-01-sprite.png") no-repeat -278px -498px;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+    margin-right: 10px; }
+
+.proto-banner {
+  border: #eaeaea 1px solid;
+  height: 438px; }
+  .proto-banner > img {
+    width: 100%;
+    height: 100%; }
+
+.rowE .btn {
+  display: block;
+  height: 55px;
+  position: absolute;
+  z-index: 200;
+  cursor: pointer;
+  background: url("../imgs/nth-01-sprite.png") no-repeat; }
+
+.rowE .prev:hover {
+  background-position: -436px -527px; }
+
+.rowE .prev {
+  background-position: -401px -527px; }
+
+.rowE .next:hover {
+  background-position: -508px -527px; }
+
+.rowE .next {
+  background-position: -472px -527px; }
+
+/*# sourceMappingURL=caseinpage.css.map */

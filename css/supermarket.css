@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 父元素-横向排列（主轴） */
+/* 父元素-横向换行 */
+/* 父元素-水平居中（主轴是横向才生效） */
+/* 子元素-显示在从左向右（从上向下）第1个位置，用于改变源文档顺序显示 */
+/* 子元素-显示在从左向右（从上向下）第2个位置，用于改变源文档顺序显示 */
+.new-content .ins-art {
+  padding: 0; }
+
+.new-content .ins-aside {
+  width: 212px; }
+
+.ins-page {
+  padding: 49px 0 74px 0; }
+
+.exhibit {
+  padding: 0 0 20px 0; }
+  .exhibit ul {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    box-pack: justify;
+    font-size: 12px;
+    padding: 0 19px 0 0; }
+    .exhibit ul > li {
+      border: 1px solid #efefef; }
+      .exhibit ul > li > a, .exhibit ul > li img {
+        display: block;
+        width: 240px;
+        height: 182px; }
+      .exhibit ul > li ol {
+        border-top: 1px solid #efefef;
+        padding: 6px 16px;
+        background-color: #fafafa; }
+        .exhibit ul > li ol > p {
+          color: #c9c9c9;
+          padding: 6px 0; }
+          .exhibit ul > li ol > p .ex-time {
+            float: right; }
+          .exhibit ul > li ol > p em {
+            color: #666; }
+        .exhibit ul > li ol > p:nth-child(2) span {
+          margin: 0 8px; }
+
+/*# sourceMappingURL=supermarket.css.map */
