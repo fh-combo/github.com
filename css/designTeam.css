@@ -219,7 +219,10 @@
     font-size: 14px;
     color: #fff;
     padding: 10px 27px;
-    line-height: 1.45em; }
+    line-height: 1.45em;
+    width: 100%; }
+    .wrapBox ul > li > p em {
+      display: block; }
     .wrapBox ul > li > p span {
       font-size: 12px; }
       .wrapBox ul > li > p span .small-label {
